@@ -15,5 +15,16 @@
 </head>
 
 <body>
+    <h1>FILMS</h1>
+
+    <!-- ciclo dell'arrey -->
+    <ul>
+    <?php foreach($movies as $movie) : ?>
+        <li> Titolo : <h3> <?= $titolo -> titolo ?> </h3></li>
+        <li> Lingua: <?= $lingua -> lingua ?> </li>
+        <li> Voto: <h5> <?= $voto -> voto ?> </h5></li>
+    <?php endforeach; ?>
+    </ul>
+
 </body>
 </html>
