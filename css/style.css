@@ -1,0 +1,15 @@
+/* funzioni reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(201, 136, 16, 0.806);
+}
+
+h1 {
+  color: green;
+}
