@@ -1,5 +1,6 @@
 <?php
 
+// la classe è un modello che descrive un preciso pezzo di realtà
 // le mie variabili
 class Production {
     public $titolo;
@@ -12,9 +13,10 @@ class Production {
         $this->lingua = $lingua;
         $this->voto = $voto;
     }
-}
+};
 
-// manifestazione del costruttore nell'istanza, lo si fa con ()
+// manifestazione del costruttore nell'istanza, lo si fa con (); genero appunto oggetti/istanze
+// creo degli arrey con titolo, lingua e voto
 $movie1 = new Production ('Salvate il soldato Andrea', 'itaGliano', 8);
 $movie2 = new Production ('Harry Popper', 'olandese', 7);
 $movie3 = new Production ('Il nome della rosa', 'russo', 9);
