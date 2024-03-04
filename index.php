@@ -1,12 +1,12 @@
 <?php
     include_once __DIR__ . '/Models/db.php';
 
-$movie1 = new Production ('Salvate il soldato Andrea', 'italiano', 8);
-$movie2 = new Production ('Harry Popper', 'inglese', 7);
+$movie1 = new Production ('Salvate il soldato Andrea', 'itaGliano', 8);
+$movie2 = new Production ('Harry Popper', 'olandese', 7);
 $movie3 = new Production ('Il nome della rosa', 'russo', 9);
 $movie4 = new Production ('Tutti pazzi per Mary', 'inglese', 6);
 $movie5 = new Production ('La dolce vita', 'spagnolo', 10);
-var_dump($movie5);
+// var_dump($movie5);
 
 $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 // var_dump($movies);
@@ -29,16 +29,20 @@ $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 </head>
 
 <body>
-    <h1>FILMS</h1>
+    <div class="container">
 
-    <!-- ciclo dell'arrey -->
-    <ul>
-    <?php foreach($movies as $movie) : ?>
-        <li> Titolo : <h3> <?= $titolo -> titolo ?> </h3></li>
-        <li> Lingua: <?= $lingua -> lingua ?> </li>
-        <li> Voto: <h5> <?= $voto -> voto ?> </h5></li>
-    <?php endforeach; ?>
-    </ul>
-
+        <h1>FILMS</h1>
+        
+        <!-- ciclo dell'arrey -->
+        <ul>
+            <?php foreach($movies as $movie) : ?>
+                <li class="text-uppercase fs-5 fw-bold"> Titolo: <?= $movie->titolo ?> </li>
+                <li class="fst-italic"> Lingua: <?= $movie->lingua ?> </li>
+                <li class="fw-bold"> Voto: <?= $movie->voto ?> </li>
+                <br>
+            <?php endforeach; ?>
+        </ul>
+            
+    </div>
 </body>
 </html>
