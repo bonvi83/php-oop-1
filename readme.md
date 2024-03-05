@@ -6,6 +6,10 @@ All'interno della classe dovrete gestire un titolo, una lingua e un voto (su una
 
 Istanziate poi almeno due oggetti Production e stampate a schermo i loro valori.
 
+Aggiungete al lavoro di ieri le classi `Movie` e `TVSerie`.
+La classe `Movie` gestisce due proprietà: `profitti` e `durata`.
+La classe `TVSerie` gestisce il `numero di stagioni`.
+
 **Bonus 1**
 
 Creare un layout completo per stampare a schermo una lista di produzioni. Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle. Possiamo ad esempio organizzare il codice:
@@ -17,3 +21,7 @@ Creare un layout completo per stampare a schermo una lista di produzioni. Faccia
 **Bonus 2**
 
 Create una classe `Genre` (gli attributi potrebbero essere nome e descrizione) e fate in modo che la classe Production accetti un genere nel costruttore. Aggiornate le informazioni stampate a schermo con il genere.
+
+**Bonus 3**
+
+Facciamo in modo che la classe Production accetti più di un genere.

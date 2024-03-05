@@ -27,4 +27,12 @@ $movie5 = new Production ('La dolce vita', 'spagnolo', 10);
 $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 // var_dump($movies);
 
+
+
+// aggiunta di due nuove classi:
+
+// class Movie
+
+// class TVSerie
+
 ?>

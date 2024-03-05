@@ -19,12 +19,12 @@
 
 <body>
     <div class="container">
-        <h1>FILMS</h1>
+        <h1>FILMS e SERIE TV</h1>
         
-        <!-- ciclo dell'arrey -->
+        <!-- ciclo for dell'arrey -->
         <ul>
             <?php foreach($movies as $movie) : ?>
-                <li class="text-uppercase fs-5 fw-bold"> Titolo: <?= $movie->titolo ?> </li>
+                <li class="text-uppercase fs-5 fw-bold text-primary"> Titolo: <?= $movie->titolo ?> </li>
                 <li class="fst-italic"> Lingua: <?= $movie->lingua ?> </li>
                 <li class="fw-bold"> Voto: <?= $movie->voto ?> </li>
                 <br>
