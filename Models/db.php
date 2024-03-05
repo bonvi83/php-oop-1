@@ -31,4 +31,17 @@ var_dump($movie1);
 $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 // var_dump($movies);
 
+
+
+// creo degli arrey per le serie tv
+$serietv1 = new TVSerie ('Don Matteo', 'itaGliano', 8, '120 stagioni');
+$serietv2 = new TVSerie ('Biancaneve', 'olandese', 7, '5 stagioni');
+$serietv3 = new TVSerie ('Rocco e i suoi fratelli', 'russo', 9, '3 stagioni');
+$serietv4 = new TVSerie ('Tutti pazzi per LA Mary', 'inglese', 6, '30 stagioni');
+var_dump($serietv1);
+
+$series = [$serietv1, $serietv2, $serietv3, $serietv4];
+// var_dump($series);
+
+
 ?>
