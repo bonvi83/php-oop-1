@@ -1,5 +1,7 @@
 <?php
     include_once __DIR__ . '/Models/db.php';
+    include_once __DIR__ . '/Models/movie.php';
+    include_once __DIR__ . '/Models/tvserie.php';
 ?>
 
 
@@ -27,6 +29,8 @@
                 <li class="text-uppercase fs-5 fw-bold text-primary"> Titolo: <?= $movie->titolo ?> </li>
                 <li class="fst-italic"> Lingua: <?= $movie->lingua ?> </li>
                 <li class="fw-bold"> Voto: <?= $movie->voto ?> </li>
+                <!-- <li> Profitti: <?= $movie->profitti ?> </li>
+                <li> Durata: <?= $movie->durata ?> </li> -->
                 <br>
             <?php endforeach; ?>
         </ul>

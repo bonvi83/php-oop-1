@@ -1,5 +1,9 @@
 <?php
 
+require_once 'movie.php';
+require_once 'tvserie.php';
+
+
 // la classe è un modello che descrive un preciso pezzo di realtà
 // le mie variabili
 class Production {
@@ -17,22 +21,14 @@ class Production {
 
 // manifestazione del costruttore nell'istanza, lo si fa con (); genero appunto oggetti/istanze
 // creo degli arrey con titolo, lingua e voto
-$movie1 = new Production ('Salvate il soldato Andrea', 'itaGliano', 8);
-$movie2 = new Production ('Harry Popper', 'olandese', 7);
-$movie3 = new Production ('Il nome della rosa', 'russo', 9);
-$movie4 = new Production ('Tutti pazzi per Mary', 'inglese', 6);
-$movie5 = new Production ('La dolce vita', 'spagnolo', 10);
-// var_dump($movie5);
+$movie1 = new Movie ('Salvate il soldato Andrea', 'itaGliano', 8, '50 milioni', '3 ore');
+$movie2 = new Movie ('Harry Popper', 'olandese', 7, '100 milioni', '15 ore');
+$movie3 = new Movie ('Il nome della rosa', 'russo', 9, '5 milioni', '2 ore');
+$movie4 = new Movie ('Tutti pazzi per Mary', 'inglese', 6, '3 milioni', '1 volta');
+$movie5 = new Movie ('La dolce vita', 'spagnolo', 10, '1 milione', '30 anni');
+var_dump($movie1);
 
 $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 // var_dump($movies);
-
-
-
-// aggiunta di due nuove classi:
-
-// classe Movie con porofitti e durata
-
-// classe TVSerie con numero di stagioni
 
 ?>
