@@ -31,8 +31,8 @@ $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 
 // aggiunta di due nuove classi:
 
-// class Movie
+// classe Movie con porofitti e durata
 
-// class TVSerie
+// classe TVSerie con numero di stagioni
 
 ?>
