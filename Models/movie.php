@@ -28,4 +28,5 @@ class Movie extends Production {
         return $this->durata;
     }
 }
+
 ?>

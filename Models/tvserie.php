@@ -20,4 +20,5 @@ class TVSerie extends Production {
         return $this->stagioni;
     }
 }
+
 ?>

@@ -34,6 +34,16 @@
                 <br>
             <?php endforeach; ?>
         </ul>
+
+        <ul>
+            <?php foreach($seriestv as $serietv) : ?>
+                <li class="text-uppercase fs-5 fw-bold text-primary"> Titolo: <?= $serietv->titolo ?> </li>
+                <li class="fst-italic"> Lingua: <?= $serietv->lingua ?> </li>
+                <li class="fw-bold"> Voto: <?= $serietv->voto ?> </li>
+                <!-- <li> Stagioni: <?= $serietv->stagioni ?> </li>
+                <br>
+            <?php endforeach; ?>
+        </ul>
     </div>
 </body>
 </html>
