@@ -40,6 +40,6 @@ $serietv4 = new TVSerie ('Tutti pazzi per LA Mary', 'inglese', '6', '30 stagioni
 var_dump($serietv1);
 
 $seriestv = [$serietv1, $serietv2, $serietv3, $serietv4];
-// var_dump($series);
+// var_dump($seriestv);
 
 ?>

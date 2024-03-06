@@ -21,7 +21,7 @@
 
 <body>
     <div class="container">
-        <h1>FILMS e SERIE TV</h1>
+        <h1>FILMS e SERIES TV</h1>
         
         <!-- ciclo for dell'arrey -->
         <ul>
@@ -29,8 +29,10 @@
                 <li class="text-uppercase fs-5 fw-bold text-primary"> Titolo: <?= $movie->titolo ?> </li>
                 <li class="fst-italic"> Lingua: <?= $movie->lingua ?> </li>
                 <li class="fw-bold"> Voto: <?= $movie->voto ?> </li>
-                <!-- <li> Profitti: <?= $movie->profitti ?> </li>
-                <li> Durata: <?= $movie->durata ?> </li> -->
+                <?php if($production instanceof Movie): ?>
+                <li> Profitti: <?= $movie->profitti ?> </li>
+                <li> Durata: <?= $movie->durata ?> </li>
+                <?php endif; ?>
                 <br>
             <?php endforeach; ?>
         </ul>
@@ -40,7 +42,9 @@
                 <li class="text-uppercase fs-5 fw-bold text-primary"> Titolo: <?= $serietv->titolo ?> </li>
                 <li class="fst-italic"> Lingua: <?= $serietv->lingua ?> </li>
                 <li class="fw-bold"> Voto: <?= $serietv->voto ?> </li>
-                <!-- <li> Stagioni: <?= $serietv->stagioni ?> </li>
+                <?php if($production instanceof TVSereie): ?>
+                <li> Stagioni: <?= $serietv->stagioni ?> </li>
+                <?php endif; ?>
                 <br>
             <?php endforeach; ?>
         </ul>
