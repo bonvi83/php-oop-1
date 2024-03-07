@@ -26,7 +26,7 @@ $movie2 = new Movie ('Harry Popper', 'olandese', '7', '100 milioni', '15 ore');
 $movie3 = new Movie ('Il nome della rosa', 'russo', '9', '5 milioni', '2 ore');
 $movie4 = new Movie ('Tutti pazzi per Mary', 'inglese', '6', '3 milioni', '1 volta');
 $movie5 = new Movie ('La dolce vita', 'spagnolo', '10', '1 milione', '30 anni');
-var_dump($movie1);
+// var_dump($movie1);
 
 $movies = [$movie1, $movie2, $movie3, $movie4, $movie5];
 // var_dump($movies);
@@ -37,7 +37,7 @@ $serietv1 = new TVSerie ('Don Matteo', 'itaGliano', '8', '120 stagioni');
 $serietv2 = new TVSerie ('Biancaneve', 'olandese', '7', '5 stagioni');
 $serietv3 = new TVSerie ('Rocco e i suoi fratelli', 'russo', '9', '3 stagioni');
 $serietv4 = new TVSerie ('Tutti pazzi per LA Mary', 'inglese', '6', '30 stagioni');
-var_dump($serietv1);
+// var_dump($serietv1);
 
 $seriestv = [$serietv1, $serietv2, $serietv3, $serietv4];
 // var_dump($seriestv);
